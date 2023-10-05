@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(84, 16, 243);
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.search-form {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline-color: silver;
+    background-color: rgba(204, 204, 204, 0.7);
+}
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    color: black;
+    background-color: gray;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.photo-card {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0.7);
+}
+.photo-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 150px;
+
+}
+.photo-card img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.load-more {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.load-more:hover {
+    color: black;
+    background-color: gray;
+
+}
+.info {
+    margin-top: 10px;
+    display: flex;
+}
+.info-item {
+    margin: 5px 0;
+    font-size: 11px;
+}
+.btn-up {
+    position: fixed;
+    background-color: #333;
+    right: 20px;
+    bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+}
+.btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+.btn-up_hide {
+    display: none;
+}
+@media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+        background-color: grey;
+    }
+}
